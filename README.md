@@ -9,6 +9,45 @@ This is mostly a collection of information that should answer some commonly aske
 - Good 2-meter USB-C extension cable - connect just this to the headset to avoid dangling cables restricting movement
 - Powered USB-C hub - connect to extension cable and plug in any peripherals, charges the headset while playing
   - Make sure it's a _quality_ one that supports USB-C Power Delivery with decent wattage (45W+)
+- Infrared illuminator to improve tracking quality in uneven lighting, and to allow playing in complete darkness
+  - Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area
+
+## :saxophone: Songs
+
+[Official Custom Song Guide](https://paradiddleapp.com/custom-song-guide/)
+
+"Songs", also referred to as maps, consist of at least one audio file and one `.rlrr` file. The `.rlrr` is just a JSON definition of the song metadata, the filenames the song consists of (audio files, cover art), a kit definition (`instruments`), including the positions, pitch and other settings of individual kit pieces, plus events within the song that show up on the note highway.
+
+### :performing_arts: Custom songs
+
+[paraDB](https://paradb.net/) hosts custom songs for download, see [instructions](https://paradb.net/instructions) on how to extract the files correctly, also described below.
+
+### :open_file_folder: Song directory layout
+
+`Songs` is a subdirectory in Paradiddle's game directory. On standalone headsets such as the Quest, this would be `Paradiddle/Songs` at the root of its "Internal Shared Storage". Each **Song** is a subdirectory in the `Songs` directory. All files must be extracted, ie. not in a .zip.
+
+```
+Songs/
+├── Thoughts and Prayers
+│   ├── Disguise.png
+│   ├── guitar.ogg
+│   └── Thoughts and Prayers_Expert.rlrr
+├── Thriller
+│   ├── album.jpg
+│   ├── song.ogg
+│   ├── Thriller_Easy.rlrr
+│   ├── Thriller_Expert.rlrr
+│   ├── Thriller_Hard.rlrr
+│   └── Thriller_Medium.rlrr
+...
+```
+
+In the above directory listing, "Thoughts and Prayers" has only one difficulty, "Thriller" has all four. Many manually mapped custom songs only include the Expert level, which is usually the most accurate representation of the song the mapper did. Songs converted from other rhythm games often have more simplified levels, but can also be of poor quality in terms of accuracy, timing and instruments, unless adjusted or fixed after conversion.
+
+There can be one or more audio files and up to four drum audio files.
+
+> [!TIP]
+> The `.rlrr` files are human-readable JSON and you can just mess with them with a text editor such as Notepad, or generate them entirely with code.
 
 ## :musical_score: MIDI
 
@@ -41,14 +80,15 @@ There's two common ways for wired MIDI connections:
 - MIDI via 5-pin DIN connectors (traditional, older kits)
   - A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work
 
+When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some adapters may have a switch with positions like "tab" / "comp", to change the operating mode of the adapter. The one that outputs standard USB MIDI should usually be selected - consult the adapter's manual.
+
 > [!IMPORTANT]
 > If using a standalone headset and your kit supports USB, ensure that it also supports _standard_ USB MIDI. If the kit requires a special driver to work with a computer, it's possible that it uses a proprietary protocol over USB, and **won't work on standalone headsets**.
 > If such a kit has traditional MIDI ports, it can be used with a USB MIDI adapter.
 
-
 ### :arrow_left: :notes: MIDI input
 
-#### :desktop_computer: PC/SteamVR
+#### :desktop_computer: PC/Steam
 
 On the PC, just connect your device(s) via USB or otherwise - as long as Windows recognizes it as a MIDI device, it should work. Then:
 
@@ -61,9 +101,13 @@ To test and debug communications, a tool such as [MidiView](https://hautetechniq
 
 Quest/Pico/etc. have a USB-C port. To connect devices such as your kit to it, you need a [USB OTG adapter](https://en.wikipedia.org/wiki/USB_On-The-Go) which is typically a short cable with one USB-C male connector (plug to headset) and one USB-A female connector (plug your device here). There are also variants that have a third USB-C female connector for supplying power to the headset, keeping it charged while playing.
 
+A USB-C hub works similarly to an OTG adapter but has more functionality.
+
+Connect your kit/device to the OTG adapter or hub, then that to the headset. Then pick the available MIDI input device in Paradiddle's settings.
+
 ### :notes: :arrow_right: MIDI output (USB / network)
 
-#### :desktop_computer: PC/SteamVR
+#### :desktop_computer: PC/Steam
 
 On the PC, output is as simple as input - just pick the right MIDI output device in Paradiddle's settings.
 
@@ -93,16 +137,21 @@ Less common options:
 
 ### :keyboard: USB footswitches
 
-A typical USB footswitch (commonly also referred to as pedal) is essentially just a USB keyboard with one programmable key, and you can connect as many as you need to Paradiddle. They can be configured with software to emit keypresses, and this should be done in a particular way:
+A typical USB footswitch (commonly also referred to as pedal) is essentially just a USB keyboard with one programmable key, and you can connect as many as you need to Paradiddle. They can be configured with the manufacturer's control software (some might be able to program a variety of footswitches) to emit keypresses, and this should be done in a particular way:
 
 - **Kick: single-shot** - key is pressed and immediately released, regardless of foot position
 - **Hi-Hat: hold** - key is pressed and released only after the foot is lifted
 
+After choosing the key to use (Space, A, etc.) in the control software, map it in Paradiddle's control settings. On standalone headsets, avoid modifier keys such as Control or Shift, just use letters.
+
+> [!IMPORTANT]
+> On PC/Steam, the game window must be focused for it to get keyboard input! Another window such as SteamVR's popup can easily get in the way, making it seem like the pedal doesn't work.
+
 ### :money_with_wings: MIDI pedals
 
-A typical pedal with MIDI interface is the one that's connected to an e-kit's drum module. There are also dedicated MIDI drum interfaces where for example just the pedals can be connected, instead of a whole kit.
+A typical pedal with MIDI interface is the one that's connected to an e-kit's drum module. There are also dedicated MIDI drum interfaces where for example just the pedals/triggers can be connected, instead of using the whole kit, which makes for a more compact VR setup.
 
-In contrast to footswitches that are easy to interface, using actual pedals can be expensive, not just due to the cost of the pedals themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
+In contrast to footswitches that are easy to interface, using actual pedals can be expensive, not just due to the cost of the pedals/triggers themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
 
 ### :guitar: Rockband pedals
 
@@ -113,7 +162,6 @@ With PC, there are two options:
 - Audio input
 
 See official pedal guide for more details.
-
 
 ### :nut_and_bolt: DIY (Do-It-Yourself)
 
