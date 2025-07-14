@@ -187,6 +187,21 @@ Also, DIY can also mean modifying an off-the-shelf footswitch for example, for b
 
 An example of a setup using some custom software and hardware (click to view larger): [![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
 
+
+## :hourglass: Minimizing latency
+
+For a comfortable experience, the latency in visuals and audio should be as small as possible. 
+
+### Audio output
+
+Using Bluetooth headphones can be more or less ruled out, as the time it takes for the sound to play after it was triggered has a considerable and unpredictable latency. There are low-latency headphones using a separate transmitter, but these tend to be pricier.
+
+When using an e-kit, the most responsive option is to mute the VR kit and listen to drum sounds played by the e-kit itself, via speakers for example. The song audio from Paradiddle can be played via an AUX cable through the kit too, or listened to via the headset's speakers. Note offset may need to be adjusted in Paradiddle settings for the notes to line up as expected.
+
+### Streaming, Virtual Desktop etc.
+
+:construction_worker:
+
 ## :magic_wand: Miscellaneous tips and tricks
 
 - You can use the PDF import to create (temporary) decorations to your surroundings - just create a PDF of your favorite picture and hang it next to your hi-hat, or build a roof with them.
