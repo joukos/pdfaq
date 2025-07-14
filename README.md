@@ -6,14 +6,33 @@ This is a collection of information about the VR drumming simulation / rhythm ga
 
 ## :electric_plug: Handy accessories
 
-- Good 2-meter USB-C extension cable - connect just this to the headset to avoid dangling cables restricting movement
-![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg)
-- Powered USB-C hub - connect to extension cable and plug in any peripherals, charges the headset while playing
-  - Make sure it's a _quality_ one that supports USB-C Power Delivery with decent wattage (45W+)
-![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg)
-- Infrared illuminator to improve tracking quality in uneven lighting, and to allow playing in complete darkness
-  - Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area
+### USB-C extension cable
 
+Connect just this to the headset to avoid dangling cables restricting movement. The length can't be extended indefinitely, but for example a 2-meter one is practical enough.
+
+![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg)
+
+### Powered USB-C hub
+
+Connect to extension cable and plug in any peripherals. If power is supplied to the hub (via a dedicated USB-C power port), it also charges the headset while playing. Make sure it's a _quality_ one that supports USB-C Power Delivery with decent wattage (45W+).
+
+Using a hub gives the most flexibility and usually enough ports to connect all the pedals you might ever need.
+
+![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg)
+
+### USB OTG adapter
+
+Without a hub, the minimum needed to connect USB devices to standalone headsets.
+
+![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg)
+
+### Infrared Illuminator
+
+Using an IR light to illuminate the surroundings and controllers can improve tracking quality in uneven lighting, and allows playing in complete darkness.
+
+Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area. These can either be attached to the headset or simply pointed at the player from a distance, powered by a power bank.
+
+![ZYBER IR Illuminator for Pico/Quest](img/zyber-ir-illuminator-1024px.jpg)
 
 ## :saxophone: Songs
 
@@ -92,9 +111,9 @@ There's two main ways Paradiddle can utilize MIDI:
 1. **MIDI input** - play the VR kit pieces using an e-kit, or any other device with MIDI support
 2. **MIDI output** - send midi to another device by playing the VR kit pieces in Paradiddle
 
-- If you want to use an electronic drum kit with Paradiddle, you want **MIDI input**.
-- If you want to control a synthesizer or such by playing the VR kit, you want **MIDI output**.
-- You can also do both (play VR sounds with external device while using VR kit to play some other device).
+- If you want to use an electronic drum kit with Paradiddle, you want **MIDI input**
+- If you want to control a synthesizer or such by playing the VR kit, you want **MIDI output**
+- You can also do both (play VR sounds with external device while using VR kit to play some other device)
 
 ### :open_book: Essential MIDI basics
 
@@ -107,7 +126,13 @@ There's two main ways Paradiddle can utilize MIDI:
 - MIDI channel 10 is reserved for percussion in the [General MIDI standard](https://en.wikipedia.org/wiki/General_MIDI), which means that different percussion sounds should be triggered with the notes received, instead of pitching the current instrument
   - Most electronic drum kits output on channel 10, sometimes this can be changed too
 
-### :arrows_counterclockwise: MIDI connections
+### Paradiddle MIDI configuration
+
+- To use MIDI input or output, first pick the correct device(s) in Paradiddle's menu, in Options -> MIDI
+- Then, enable either MIDI input or output **for each of the kit pieces** - just picking the MIDI device does not automatically toggle them on
+- When MIDI output is enabled, in-game audio of that drum is muted automatically, but it can be toggled back on
+
+### :arrows_counterclockwise: Physical MIDI connections
 
 There's two common ways for wired MIDI connections:
 
@@ -121,7 +146,7 @@ When choosing a cable to use, consider the length and type of connector, and ove
 
 #### MIDI via 5-pin DIN connectors (traditional, older kits)
 
-A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work
+A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work. A kit might also support both USB MIDI and 5-pin MIDI, so use what's most convenient. Also consider, for example, that a 10-meter MIDI cable costs less than $10, but running the same length over USB only can be expensive or impractical.
 
 ![Traditional DIN MIDI connectors - THRU, OUT and IN](https://upload.wikimedia.org/wikipedia/commons/0/02/Midi_ports_and_cable.jpg)
 
@@ -129,7 +154,7 @@ When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some
 
 > [!IMPORTANT]
 > If using a standalone headset and your kit supports USB, ensure that it also supports _standard_ USB MIDI. If the kit requires a special driver to work with a computer, it's possible that it uses a proprietary protocol over USB, and **won't work on standalone headsets**.
-> If such a kit has traditional MIDI ports, it can be used with a USB MIDI adapter.
+> But if such a kit also has traditional MIDI ports, it can be used with a USB MIDI adapter.
 
 ### :arrow_left: :notes: MIDI input
 
@@ -200,7 +225,6 @@ A typical pedal with MIDI interface is the one that's connected to an e-kit's dr
 
 In contrast to footswitches that are easy to interface, using actual pedals can be expensive, not just due to the cost of the pedals/triggers themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
 
-
 ### :guitar: Rockband pedals
 
 The Rockband pedal cannot be used with Quest, as it requires an audio input connection which it lacks (the 3.5mm port is output _only_), and the standalone application does not currently (July 2025) support audio input devices, so hooking up a USB audio interface in between does not help.
@@ -220,7 +244,6 @@ A typical example is an off-the-shelf or jerry-rigged actuation mechanism (ie. t
 Also, DIY can also mean modifying an off-the-shelf footswitch for example, for better ergonomics or feel.
 
 An example of a setup using some custom software and hardware (click to view larger): [![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
-
 
 ## :hourglass: Minimizing latency
 
