@@ -24,7 +24,13 @@ Using a hub gives the most flexibility and usually enough ports to connect all t
 
 Without a hub, the minimum needed to connect USB devices to standalone headsets.
 
-![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg)
+Some adapters have a separate power port, a USB-C charger should be connected to it to charge the headset. This would also power any connected peripherals.
+
+Make sure you get an adapter that explicitly mentions supporting Power Delivery (PD) and OTG.
+
+USB-C OTG adapter | USB-C OTG adapter with PD
+:-:|:-:
+![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg)  |  ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
 
 ### Infrared Illuminator
 
@@ -130,7 +136,7 @@ There's two main ways Paradiddle can utilize MIDI:
 
 - To use MIDI input or output, first pick the correct device(s) in Paradiddle's menu, in Options -> MIDI
 - Then, enable either MIDI input or output **for each of the kit pieces** - just picking the MIDI device does not automatically toggle them on
-- When MIDI output is enabled, in-game audio of that drum is muted automatically, but it can be toggled back on
+- When MIDI output is enabled, in-game audio of that drum is muted automatically, but it can be toggled back on in the Audio tab of its settings
 
 ### :arrows_counterclockwise: Physical MIDI connections
 
@@ -142,19 +148,20 @@ MIDI can be used over USB by connecting the e-kit's USB-B port to a USB-A port (
 
 When choosing a cable to use, consider the length and type of connector, and overall tidiness - there are USB-C <-> USB-B cables also available, but USB-A ones may be more readily available, cheap and versatile when coupled with an OTG adapter or hub. There are no high requirements for the cable as the standard MIDI bandwidth is only 31250 bits per second - as long as the data pins are connected and the cable is not decrepit, it's likely to be fine for the purpose. Still, bad cables or adapters occasionally cause erratic problems, so it's good to have more than one to try in case of issues.
 
-![USB-B - USB-A cable, printer cable](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A-B_Usb_Cable.jpg/960px-A-B_Usb_Cable.jpg)
-
 #### MIDI via 5-pin DIN connectors (traditional, older kits)
 
 A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work. A kit might also support both USB MIDI and 5-pin MIDI, so use what's most convenient. Also consider, for example, that a 10-meter MIDI cable costs less than $10, but running the same length over USB only can be expensive or impractical.
-
-![Traditional DIN MIDI connectors - THRU, OUT and IN](https://upload.wikimedia.org/wikipedia/commons/0/02/Midi_ports_and_cable.jpg)
 
 When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some adapters may have a switch with positions like "tab" / "comp", to change the operating mode of the adapter. The one that outputs standard USB MIDI should usually be selected - consult the adapter's manual.
 
 > [!IMPORTANT]
 > If using a standalone headset and your kit supports USB, ensure that it also supports _standard_ USB MIDI. If the kit requires a special driver to work with a computer, it's possible that it uses a proprietary protocol over USB, and **won't work on standalone headsets**.
 > But if such a kit also has traditional MIDI ports, it can be used with a USB MIDI adapter.
+
+
+USB-B "printer" cable | 5-pin MIDI ports
+:-:|:-:
+![USB-B - USB-A cable, printer cable](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A-B_Usb_Cable.jpg/960px-A-B_Usb_Cable.jpg) | ![Traditional DIN MIDI connectors - THRU, OUT and IN](https://upload.wikimedia.org/wikipedia/commons/0/02/Midi_ports_and_cable.jpg)
 
 ### :arrow_left: :notes: MIDI input
 
