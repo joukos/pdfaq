@@ -7,10 +7,13 @@ This is mostly a collection of information that should answer some commonly aske
 ## :electric_plug: Handy accessories
 
 - Good 2-meter USB-C extension cable - connect just this to the headset to avoid dangling cables restricting movement
+![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg)
 - Powered USB-C hub - connect to extension cable and plug in any peripherals, charges the headset while playing
   - Make sure it's a _quality_ one that supports USB-C Power Delivery with decent wattage (45W+)
+![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg)
 - Infrared illuminator to improve tracking quality in uneven lighting, and to allow playing in complete darkness
   - Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area
+
 
 ## :saxophone: Songs
 
@@ -68,7 +71,7 @@ There's two main ways Paradiddle can utilize MIDI:
 - There are 16 "channels" for communications, which the sender and receiver need configured to match
   - If device A sends to channel 10 and device B listens to channel 10, device B gets the message
   - If device A sends to channel 10 and device B listens to channel 4, device B does not get the message
-  - A device could also be listening to more than one or all channels (sometimes option "0" with channels numbered 1-16)
+  - A device could also be listening to more than one, or all channels (sometimes option "0" with channels numbered 1-16), and also send events to more than one channel at a time, depending on the device's features
 - MIDI channel 10 is reserved for percussion in the [General MIDI standard](https://en.wikipedia.org/wiki/General_MIDI), which means that different percussion sounds should be triggered with the notes received, instead of pitching the current instrument
   - Most electronic drum kits output on channel 10, sometimes this can be changed too
 
@@ -76,9 +79,19 @@ There's two main ways Paradiddle can utilize MIDI:
 
 There's two common ways for wired MIDI connections:
 
-- USB MIDI (typical)
-- MIDI via 5-pin DIN connectors (traditional, older kits)
-  - A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work
+#### USB MIDI (typical)
+
+MIDI can be used over USB by connecting the e-kit's USB-B port to a USB-A port (of a PC or an OTG adapter/hub) using a "printer cable", which has the plugs for both.
+
+When choosing a cable to use, consider the length and type of connector, and overall tidiness - there are USB-C <-> USB-B cables also available, but USB-A ones may be more readily available, cheap and versatile when coupled with an OTG adapter or hub. There are no high requirements for the cable as the standard MIDI bandwidth is only 31250 bits per second - as long as the data pins are connected and the cable is not decrepit, it's likely to be fine for the purpose. Still, bad cables or adapters occasionally cause erratic problems, so it's good to have more than one to try in case of issues.
+
+![USB-B - USB-A cable, printer cable](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A-B_Usb_Cable.jpg/960px-A-B_Usb_Cable.jpg)
+
+#### MIDI via 5-pin DIN connectors (traditional, older kits)
+
+A USB MIDI adapter is needed, some audio interfaces have MIDI ports which may also work
+
+![Traditional DIN MIDI connectors - THRU, OUT and IN](https://upload.wikimedia.org/wikipedia/commons/0/02/Midi_ports_and_cable.jpg)
 
 When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some adapters may have a switch with positions like "tab" / "comp", to change the operating mode of the adapter. The one that outputs standard USB MIDI should usually be selected - consult the adapter's manual.
 
@@ -153,6 +166,7 @@ A typical pedal with MIDI interface is the one that's connected to an e-kit's dr
 
 In contrast to footswitches that are easy to interface, using actual pedals can be expensive, not just due to the cost of the pedals/triggers themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
 
+
 ### :guitar: Rockband pedals
 
 The Rockband pedal cannot be used with Quest, as it requires an audio input connection which it lacks (the 3.5mm port is output _only_), and the standalone application does not currently (July 2025) support audio input devices, so hooking up a USB audio interface in between does not help.
@@ -171,8 +185,15 @@ A typical example is an off-the-shelf or jerry-rigged actuation mechanism (ie. t
 
 Also, DIY can also mean modifying an off-the-shelf footswitch for example, for better ergonomics or feel.
 
+An example of a setup using some custom software and hardware (click to view larger): [![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
+
 ## :magic_wand: Miscellaneous tips and tricks
 
 - You can use the PDF import to create (temporary) decorations to your surroundings - just create a PDF of your favorite picture and hang it next to your hi-hat, or build a roof with them.
 
+## :bow: Image attributions
+
+- Image: ["MIDI ports and cable"](https://commons.wikimedia.org/wiki/File:Midi_ports_and_cable.jpg) by [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload), public domain.
+- Image: ["A-B USB Cable"](https://commons.wikimedia.org/wiki/File:A-B_Usb_Cable.jpg) by [Zátonyi Sándor](https://commons.wikimedia.org/wiki/User:Z%C3%A1tonyi_S%C3%A1ndor), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+- Image: ["USB-C Hubb 5 portar"](https://commons.wikimedia.org/wiki/File:USB-C_Hubb_5_portar.jpg) by [Jonatan Svensson Glad](https://commons.wikimedia.org/wiki/User:Jonatan_Svensson_Glad), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/)_)
 
