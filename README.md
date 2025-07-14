@@ -1,6 +1,6 @@
 # :drum: Paradiddle VR "FAQ"
 
-This is a collection of information about the VR drumming simulation / rhythm game [Paradiddle](https://paradiddleapp.com/) that should answer some commonly asked questions in the Paradiddle Discord, especially related to using MIDI and foot pedals.
+This is a collection of information about the VR drumming simulation / rhythm game [Paradiddle](https://paradiddleapp.com/) that should answer some commonly asked questions in the Paradiddle Discord, and allow easy linking to a particular section.
 
 *Disclaimer: This is an unofficial reference provided for informational purposes only, and does not replace official documentation of Paradiddle. The author makes no guarantees regarding the accuracy, completeness, or usefulness of the information contained herein and assumes no responsibility for any consequences resulting from its use. Use at your own risk.*
 
@@ -50,11 +50,11 @@ Each `.rlrr` is just a [JSON](https://en.wikipedia.org/wiki/JSON#Syntax) definit
 
 ### :performing_arts: Custom songs
 
-[paraDB](https://paradb.net/) hosts custom songs for download, see [instructions](https://paradb.net/instructions) on how to extract the files correctly, also described below.
+[paraDB](https://paradb.net/) hosts custom songs for download, and is currently the only such site for Paradiddle. See [instructions](https://paradb.net/instructions) on how to extract the files correctly, also described below.
 
 #### :headphones: ParEdit
 
-[ParEdit](https://github.com/CANA-Dan/ParEdit) is a Song _editor_ with features much beyond ParadiddleUtilities, and allows creating maps from scratch and edit them interactively in 3D.
+[ParEdit](https://github.com/CANA-Dan/ParEdit) is a Song _editor_ with features much beyond ParadiddleUtilities, and allows creating maps from scratch and editing them interactively in 3D.
 
 #### :snake: ParadiddleUtilities
 
@@ -159,9 +159,9 @@ When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some
 > But if such a kit also has traditional MIDI ports, it can be used with a USB MIDI adapter.
 
 
-USB-B "printer" cable | 5-pin MIDI ports
+USB-B "printer" cable | 5-pin MIDI ports and cable
 :-:|:-:
-![USB-B - USB-A cable, printer cable](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A-B_Usb_Cable.jpg/960px-A-B_Usb_Cable.jpg) | ![Traditional DIN MIDI connectors - THRU, OUT and IN](https://upload.wikimedia.org/wikipedia/commons/0/02/Midi_ports_and_cable.jpg)
+![USB-B - USB-A "printer cable"](img/usb-b-printer-cable.jpg) | ![Traditional DIN MIDI connectors on a synthesizer, with cable](img/5-pin-midi-port-and-cables-1024px.jpg)
 
 ### :arrow_left: :notes: MIDI input
 
@@ -248,9 +248,11 @@ If you have some basic technical skills, building your own solution to incorpora
 
 A typical example is an off-the-shelf or jerry-rigged actuation mechanism (ie. the "pedal") combined with a sensor/kickpad and a microcontroller that outputs USB MIDI.
 
-Also, DIY can also mean modifying an off-the-shelf footswitch for example, for better ergonomics or feel.
+DIY can also mean modifying an off-the-shelf footswitch for example, for better ergonomics or feel.
 
-An example of a setup using some custom software and hardware (click to view larger): [![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
+An example of a setup using some custom software and hardware (click to view larger):
+
+[![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
 
 ## :hourglass: Minimizing latency
 
@@ -269,8 +271,3 @@ When using an e-kit, the most responsive option is to mute the VR kit and listen
 ## :magic_wand: Miscellaneous tips and tricks
 
 - You can use the PDF import to create (temporary) decorations to your surroundings - just create a PDF of your favorite picture and hang it next to your hi-hat, or build a roof with them.
-
-## :bow: Image attributions
-
-- Image: ["MIDI ports and cable"](https://commons.wikimedia.org/wiki/File:Midi_ports_and_cable.jpg) by [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload), public domain.
-- Image: ["A-B USB Cable"](https://commons.wikimedia.org/wiki/File:A-B_Usb_Cable.jpg) by [Zátonyi Sándor](https://commons.wikimedia.org/wiki/User:Z%C3%A1tonyi_S%C3%A1ndor), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
