@@ -10,7 +10,7 @@ There's a variety of useful accessories to improve the playing experience.
 
 USB-C powered hub | USB-C OTG adapter | USB-C OTG adapter with PD
 :-:|:-:|:-:
-![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg) | ![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg) | ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
+![USB-C OTG hub](img/usb-c-hub-with-pd.jpg) | ![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg) | ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
 
 USB-C extension cable and angled connector | Infrared Illuminator and USB-A <-> USB-C adapter
 :-:|:-:
@@ -274,5 +274,3 @@ When using an e-kit, the most responsive option is to mute the VR kit and listen
 
 - Image: ["MIDI ports and cable"](https://commons.wikimedia.org/wiki/File:Midi_ports_and_cable.jpg) by [Inductiveload](https://commons.wikimedia.org/wiki/User:Inductiveload), public domain.
 - Image: ["A-B USB Cable"](https://commons.wikimedia.org/wiki/File:A-B_Usb_Cable.jpg) by [Zátonyi Sándor](https://commons.wikimedia.org/wiki/User:Z%C3%A1tonyi_S%C3%A1ndor), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
-- Image: ["USB-C Hubb 5 portar"](https://commons.wikimedia.org/wiki/File:USB-C_Hubb_5_portar.jpg) by [Jonatan Svensson Glad](https://commons.wikimedia.org/wiki/User:Jonatan_Svensson_Glad), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/)_)
-
