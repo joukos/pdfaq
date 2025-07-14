@@ -6,19 +6,25 @@ This is a collection of information about the VR drumming simulation / rhythm ga
 
 ## :electric_plug: Handy accessories
 
+There's a variety of useful accessories to improve the playing experience.
+
+USB-C powered hub | USB-C OTG adapter | USB-C OTG adapter with PD
+:-:|:-:|:-:
+![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg) | ![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg) | ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
+
+USB-C extension cable and angled connector | Infrared Illuminator and USB-A <-> USB-C adapter
+:-:|:-:
+![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg) | ![ZYBER IR Illuminator for Pico/Quest](img/zyber-ir-illuminator-1024px.jpg)
+
 ### USB-C extension cable
 
-Connect just this to the headset to avoid dangling cables restricting movement. The length can't be extended indefinitely, but for example a 2-meter one is practical enough.
-
-![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg)
+Connect just this to the headset to avoid dangling cables restricting movement. The length can't be extended indefinitely, but for example a 2-meter one is practical enough and should work in most circumstances.
 
 ### Powered USB-C hub
 
 Connect to extension cable and plug in any peripherals. If power is supplied to the hub (via a dedicated USB-C power port), it also charges the headset while playing. Make sure it's a _quality_ one that supports USB-C Power Delivery with decent wattage (45W+).
 
 Using a hub gives the most flexibility and usually enough ports to connect all the pedals you might ever need.
-
-![USB-C OTG hub](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USB-C_Hubb_5_portar.jpg/1024px-USB-C_Hubb_5_portar.jpg)
 
 ### USB OTG adapter
 
@@ -28,17 +34,11 @@ Some adapters have a separate power port, a USB-C charger should be connected to
 
 Make sure you get an adapter that explicitly mentions supporting Power Delivery (PD) and OTG.
 
-USB-C OTG adapter | USB-C OTG adapter with PD
-:-:|:-:
-![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg)  |  ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
-
 ### Infrared Illuminator
 
 Using an IR light to illuminate the surroundings and controllers can improve tracking quality in uneven lighting, and allows playing in complete darkness.
 
 Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area. These can either be attached to the headset or simply pointed at the player from a distance, powered by a power bank.
-
-![ZYBER IR Illuminator for Pico/Quest](img/zyber-ir-illuminator-1024px.jpg)
 
 ## :saxophone: Songs
 
