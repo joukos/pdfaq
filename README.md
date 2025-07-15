@@ -12,9 +12,9 @@ USB-C powered hub | USB-C OTG adapter | USB-C OTG adapter with PD
 :-:|:-:|:-:
 ![USB-C OTG hub](img/usb-c-hub-with-pd.jpg) | ![USB-C OTG adapter](img/usb-c-otg-adapter-1024px.jpg) | ![USB-C OTG adapter with PD](img/usb-c-otg-with-pd-1024px.jpg)
 
-USB-C extension cable and angled connector | Infrared Illuminator and USB-A <-> USB-C adapter
-:-:|:-:
-![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg) | ![ZYBER IR Illuminator for Pico/Quest](img/zyber-ir-illuminator-1024px.jpg)
+USB-C extension cable and angled connector | Infrared Illuminator and USB-A <-> USB-C adapter | Controller grip straps (Pico 4)
+:-:|:-:|:-:
+![USB-C extension cable and angled connector](img/usb-c-extension-and-angled-connector-1024px.jpg) | ![ZYBER IR Illuminator for Pico/Quest](img/zyber-ir-illuminator-1024px.jpg) | ![Pico4 controller grip straps](img/wrist-straps-for-pico4-1024px.jpg)
 
 ### USB-C extension cable
 
@@ -39,6 +39,31 @@ Make sure you get an adapter that explicitly mentions supporting Power Delivery 
 Using an IR light to illuminate the surroundings and controllers can improve tracking quality in uneven lighting, and allows playing in complete darkness.
 
 Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area. These can either be attached to the headset or simply pointed at the player from a distance, powered by a power bank.
+
+## :medical_symbol: Posture and ergonomics
+
+The sensation of playing a drum kit in VR is unlike playing a real one due to lack of rebound. This means that the player's hands must perform the entire motion of the virtual stick, including it "bouncing back" from the drum. Rolls that might require negligible energy to perform on a real kit, can be exhausting and awkward in VR unless proper technique is used.
+
+You'll also need enough space to swing your hands, to not hurt others or break something.
+
+Beginner players may quickly feel the strain in their wrists, and playing Paradiddle can be intense, but very fun exercise overall. It's important to avoid injuries by resting adequately and having a comfortable playing position, aligned with the virtual kit. For the choice of drum throne and sitting position, normal drumming ergonomics advice applies - avoid tension, be relaxed. Sit high enough so that you don't hit your legs with the controllers.
+
+When playing with hand controllers, using grip straps is **a must**. Silicone or plastic might not withstand gameplay, consider ones that are solidly attached to the controllers. The straps allow you to relax your grip without dropping the controller, and gives more flexibility for hand movement.
+
+Try to place the kit so that you can play the hi-hat and the most used drums as relaxed as possible. Being free from any restrictions of real hardware, feel free to position the kit pieces to **where they're comfortable to play**, not where they normally "should" go. Move your hands around in the air and feel what might work for you, and which hand orientation you'd rather use to hit a particular drum. Try to position the pieces fairly low, so that you don't need to keep your hands raised all the time, and keep in mind that you can always position anything on the fly to make a song more comfortable to play.
+
+Consider how you want to play the hi-hat. If you already play drums, you might have a preference, but in VR controller tracking may benefit from playing "open-handed" (left hand playing the hi-hat), as the hands don't cross and occlude each other. This also allows placing the hi-hat fairly low, which helps to keep shoulders relaxed when playing fast.
+
+When you've set up the kit as you like, remember to save it, and keep iterating it until it feels natural. Even small adjustments in snare or cymbal heights for example can potentially turn pain into comfort with songs that require rapid hits. The angle of the pieces should also be considered. For example a rotating, slightly sideways motion of the wrist during a hit can feel comfortable, but for accurate hits the drums might need to be aligned a bit.
+
+Paradiddle has stick settings where you can adjust the stick hitbox size. Setting it to a low value makes only the tip of the stick collide with the drums, which helps to avoid accidentally hitting neighbouring pieces.
+
+Paradiddle stick settings menu
+:-:
+![Paradiddle stick settings menu](img/paradiddle-stick-settings-1024px.jpeg)
+
+> [!WARNING]
+> Until your body adjusts to the motions necessary to play the VR kit, you will waste energy working against your own muscles and get exhausted. This is normal. If you start feeling pain, stop. You'll find that regular practice, along with good sleep, will gradually improve precision and endurance, and lessens the likelihood of injury.
 
 ## :saxophone: Songs
 
