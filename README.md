@@ -140,7 +140,11 @@ There's two main ways Paradiddle can utilize MIDI:
 
 ### :arrows_counterclockwise: Physical MIDI connections
 
-There's two common ways for wired MIDI connections:
+There's two common ways for wired MIDI connections: using USB MIDI or traditional 5-pin MIDI ports.
+
+USB-B "printer" cable | 5-pin MIDI ports and cable
+:-:|:-:
+![USB-B - USB-A "printer cable"](img/usb-b-printer-cable.jpg) | ![Traditional DIN MIDI connectors on a synthesizer, with cable](img/5-pin-midi-port-and-cables-1024px.jpg)
 
 #### USB MIDI (typical)
 
@@ -157,11 +161,6 @@ When using traditional 5-pin MIDI cables with a USB MIDI adapter, note that some
 > [!IMPORTANT]
 > If using a standalone headset and your kit supports USB, ensure that it also supports _standard_ USB MIDI. If the kit requires a special driver to work with a computer, it's possible that it uses a proprietary protocol over USB, and **won't work on standalone headsets**.
 > But if such a kit also has traditional MIDI ports, it can be used with a USB MIDI adapter.
-
-
-USB-B "printer" cable | 5-pin MIDI ports and cable
-:-:|:-:
-![USB-B - USB-A "printer cable"](img/usb-b-printer-cable.jpg) | ![Traditional DIN MIDI connectors on a synthesizer, with cable](img/5-pin-midi-port-and-cables-1024px.jpg)
 
 ### :arrow_left: :notes: MIDI input
 
