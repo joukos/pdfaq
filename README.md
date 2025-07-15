@@ -40,6 +40,8 @@ Using an IR light to illuminate the surroundings and controllers can improve tra
 
 Search online for "Quest IR illuminator" or such, it doesn't matter that much what it is, as long as it has IR leds that illuminate a relatively wide area. These can either be attached to the headset or simply pointed at the player from a distance, powered by a power bank.
 
+---
+
 ## :medical_symbol: Posture and ergonomics
 
 The sensation of playing a drum kit in VR is unlike playing a real one due to lack of rebound. This means that the player's hands must perform the entire motion of the virtual stick, including it "bouncing back" from the drum. Rolls that might require negligible energy to perform on a real kit, can be exhausting and awkward in VR unless proper technique is used.
@@ -64,6 +66,8 @@ Paradiddle stick settings menu
 
 > [!WARNING]
 > Until your body adjusts to the motions necessary to play the VR kit, you will waste energy working against your own muscles and get exhausted. This is normal. If you start feeling pain, stop. You'll find that regular practice, along with good sleep, will gradually improve precision and endurance, and lessens the likelihood of injury.
+
+---
 
 ## :saxophone: Songs
 
@@ -133,6 +137,8 @@ There can be one or more audio files and up to four drum audio files. If a song 
 
 > [!TIP]
 > The `.rlrr` files are human-readable JSON and you can just mess with them with a text editor such as Notepad, or generate them entirely with code.
+
+---
 
 ## :musical_score: MIDI
 
@@ -222,6 +228,8 @@ ParadiddleUtilities has a "MIDI Connect" tab, where you can input the IP address
 
 After connecting to the headset, you can enable MIDI output in (each of) Paradiddle's drums and route it wherever you want, such as into a DAW or a synthesizer, making it an interesting and versatile input device for creating music. The MIDI events are transmitted over UDP from the headset to ParadiddleUtilities - ensure that the computer and headset are connected to the same local network.
 
+---
+
 ## :mechanical_leg: Foot pedals
 
 [Official Pedal guide](https://paradiddleapp.com/pedal-guide/)
@@ -275,7 +283,7 @@ A hi-hat pedal is often more complicated than a bass drum pedal, and might act l
 
 When using a USB footswitch, just bind its key in Paradiddle and make sure it's set to "hold" the key down in the control software.
 
-When using an e-kit's hi-hat pedal, it's up to the e-kit to determine what the input means, and which notes or CC messages it sends. The nuance in position might only affect the sound of the kit itself, and there's no strict universal standard on how a hi-hat controller should behave with regard to MIDI, or electrically. Paradiddle uses the common MIDI CC #4 for the pedal openness value, from 0 to 127.
+When using an e-kit's hi-hat pedal, it's up to the e-kit to determine what the input means, and which notes or CC messages it sends. The nuance in position might only affect the sound of the kit itself, and there's no strict universal standard on how a hi-hat controller should behave with regard to MIDI, or electrically. Paradiddle uses the common MIDI CC #4 for the pedal openness value, from 0 to 127, but the pedal or kit might only recognize open, closed and half-closed states.
 
 Note that a hi-hat pedal with expressive control is connected with a TRS (stereo) cable, unlike kick triggers which use a TS (mono) one. Make sure you have the appropriate cable.
 
@@ -303,6 +311,8 @@ An example of a setup using some custom software and hardware (click to view lar
 
 [![VR setup with Pico4](img/pedals-640px.png)](img/pedals-1536px.png)
 
+---
+
 ## :hourglass: Minimizing latency
 
 For a comfortable experience, the latency in visuals and audio should be as small as possible. 
@@ -316,6 +326,8 @@ When using an e-kit, the most responsive option is to mute the VR kit and listen
 ### Streaming, Virtual Desktop etc.
 
 :construction_worker:
+
+---
 
 ## :magic_wand: Miscellaneous tips and tricks
 
