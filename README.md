@@ -222,14 +222,39 @@ A typical USB footswitch (commonly also referred to as pedal) is essentially jus
 
 After choosing the key to use (Space, A, etc.) in the control software, map it in Paradiddle's control settings. On standalone headsets, avoid modifier keys such as Control or Shift, just use letters.
 
+Products that have three foot switches in one are impractical to use with both feet, just get them separately. Also avoid products such as the Elgato Stream Deck, they only work with a PC and have high latency.
+
 > [!IMPORTANT]
 > On PC/Steam, the game window must be focused for it to get keyboard input! Another window such as SteamVR's popup can easily get in the way, making it seem like the pedal doesn't work.
 
 ### :money_with_wings: MIDI pedals
 
-A typical pedal with MIDI interface is the one that's connected to an e-kit's drum module. There are also dedicated MIDI drum interfaces where for example just the pedals/triggers can be connected, instead of using the whole kit, which makes for a more compact VR setup.
+A typical pedal with a MIDI interface is the one that's connected to an e-kit's drum module, also known as "drum brain". There are also dedicated MIDI drum interfaces where for example just the pedals/triggers can be connected, instead of using the whole kit, which makes for a more compact VR setup.
 
-In contrast to footswitches that are easy to interface, using actual pedals can be expensive, not just due to the cost of the pedals/triggers themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
+[eDRUMin 4 drum-to-MIDI interface](https://www.audiofront.net/eDRUMin.php) with a Roland KT-10 Kick Trigger
+:-:
+![eDRUMin 4 drum-to-midi interface and Roland KT-10 Kick Trigger](img/drum-module-and-kick-trigger-1536px.jpg)
+
+In contrast to footswitches that are easy to interface due to them being just USB keyboards, using actual pedals can be expensive, not only due to the cost of the pedals/triggers themselves, but also of the interfaces required to hook them up. Still, finding nice gear second-hand can be affordable too.
+
+The dedicated drum to MIDI interfaces allow connecting pads and triggers like a typical e-kit drum module would, some with advanced options for MIDI I/O, thresholds, multi-zone triggering and more. Such interfaces are versatile and compact, and provide enough configurability to work with most hardware, which gives a bit of confidence when purchasing bargain gear.
+
+As for the pedals themselves, the sensible option is to see what can be found for a good price that suits your preferences. If cost is not an issue, just consider what you need and want - if you want to play double bass _and_ have a pedal for hi-hat too, you'll need three pedals.
+
+> [!IMPORTANT]
+> When looking for pedals online, you might come across **expression** pedals, [some](https://www.lehle.com/lehle-dual-expression) even have USB MIDI. **An expression pedal is unsuitable for kick or hi-hat!** They are like faders that stay at their position, with no spring mechanism to return it. You might use an expression pedal too for something else, but don't buy one to play kicks.
+
+### :tophat: Hi-Hat configuration
+
+A hi-hat pedal is often more complicated than a bass drum pedal, and might act like a variable controller rather than a drum pad. This means its input would be represented with a MIDI [Control Change](https://en.wikipedia.org/wiki/General_MIDI#Controller_events) (CC) message instead of MIDI note events, but it could be both, for example sending a pedal hi-hat note (44) when pushing the pedal closed fast enough. However, the kit would send the "open" and "closed" MIDI notes 46 and 42, respectively, only **when the hi-hat cymbal is hit** with the pedal in the corresponding position.
+
+When using a USB footswitch, just bind its key in Paradiddle and make sure it's set to "hold" the key down in the control software.
+
+When using an e-kit's hi-hat pedal, it's up to the e-kit to determine what the input means, and which notes or CC messages it sends. The nuance in position might only affect the sound of the kit itself, and there's no strict universal standard on how a hi-hat controller should behave with regard to MIDI, or electrically. Paradiddle uses the common MIDI CC #4 for the pedal openness value, from 0 to 127.
+
+Note that a hi-hat pedal with expressive control is connected with a TRS (stereo) cable, unlike kick triggers which use a TS (mono) one. Make sure you have the appropriate cable.
+
+In Paradiddle, a button simulates the closing/opening of the hi-hat, but when using MIDI, there's no corresponding control to start moving the VR hi-hat cymbal. Instead, Paradiddle responds to the MIDI notes and/or CCs it receives from the kit and just plays the appropriate sounds - nuance in velocity and position may be included with MIDI, but the dynamics of the hi-hat simulation, for example how the hi-hat sounds in a half-open position, are up to either the drum brain or Paradiddle to actually play.
 
 ### :guitar: Rockband pedals
 
